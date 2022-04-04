@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Breaking News</string>
+    <string name="home">Tuis</string>
+    <string name="category">Kategorie</string>
+    <string name="follow">Volg</string>
+    <string name="saved">Gestoor</string>
+    <string name="country">za</string>
+    <string name="search">Soek</string>
+    <string name="no_news">Geen nuus</string>
+    <string name="no_following_sources">Geen volgende bronne nie</string>
+    <string name="following">Volgende</string>
+</resources>

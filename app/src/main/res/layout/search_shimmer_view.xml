@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_item_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <View
+        android:id="@+id/post_title"
+        style="@style/DayAndDarkColor"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+    <View
+        android:id="@+id/view4"
+        style="@style/DayAndDarkColor"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:layout_constraintEnd_toEndOf="@+id/post_title"
+        app:layout_constraintStart_toStartOf="@+id/post_title"
+        app:layout_constraintTop_toBottomOf="@+id/post_title" />
+
+    <View
+        style="@style/DayAndDarkColor"
+        android:layout_width="@dimen/_72sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:layout_constraintStart_toStartOf="@+id/post_title"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_72sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:elevation="0dp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/post_image"
+            style="@style/DayAndDarkColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/like_count"
+        style="@style/DayAndDarkColor"
+        android:layout_width="20dp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:drawablePadding="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/comment_count"
+        style="@style/DayAndDarkColor"
+        android:layout_width="20dp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:drawablePadding="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/like_count"
+        app:layout_constraintStart_toEndOf="@+id/like_count"
+        app:layout_constraintTop_toTopOf="@+id/like_count" />
+
+    <View
+        android:id="@+id/company_name"
+        style="@style/DayAndDarkColor"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/like_count"
+        app:layout_constraintEnd_toStartOf="@+id/cardView2"
+        app:layout_constraintStart_toEndOf="@+id/comment_count"
+        app:layout_constraintTop_toTopOf="@+id/like_count" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

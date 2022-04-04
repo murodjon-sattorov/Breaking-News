@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Breaking News</string>
+    <string name="home">Додому</string>
+    <string name="category">Категорія</string>
+    <string name="follow">Слідкуйте</string>
+    <string name="saved">Збережено</string>
+    <string name="country">ua</string>
+    <string name="search">Пошук</string>
+    <string name="no_news">Жодних новин</string>
+    <string name="no_following_sources">Немає наступних джерел</string>
+    <string name="following">Після</string>
+</resources>

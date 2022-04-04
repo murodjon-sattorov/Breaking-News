@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Breaking News</string>
+    <string name="saved">Saved</string>
+    <string name="follow">Follow</string>
+    <string name="category">Category</string>
+    <string name="home">Home</string>
+    <string name="country">in</string>
+    <string name="search">Search</string>
+    <string name="no_news">No news</string>
+    <string name="no_following_sources">No following sources</string>
+    <string name="following">Following</string>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_6sdp"
+        style="@style/ItemBg"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/news_item_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/_8sdp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/company_img"
+                style="@style/DayAndDarkColor"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CompanyImage" />
+
+            <View
+                android:id="@+id/company_name"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                style="@style/DayAndDarkColor"
+                app:layout_constraintBottom_toBottomOf="@+id/company_img"
+                app:layout_constraintStart_toEndOf="@+id/company_img"
+                app:layout_constraintTop_toTopOf="@+id/company_img"
+                />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/share_post"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                style="@style/DayAndDarkColor"
+                android:layout_marginEnd="@dimen/_6sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/company_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/company_img"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CompanyImage" />
+
+
+            <View
+                android:id="@+id/post_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                style="@style/DayAndDarkColor"
+                app:layout_constraintStart_toStartOf="@+id/company_img"
+                app:layout_constraintTop_toBottomOf="@+id/company_img"/>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                style="@style/DayAndDarkColor"
+                app:layout_constraintStart_toStartOf="@+id/company_img"
+                app:layout_constraintTop_toBottomOf="@+id/post_title"/>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                style="@style/DayAndDarkColor"
+                app:layout_constraintStart_toStartOf="@+id/company_img"
+                app:layout_constraintTop_toBottomOf="@+id/view2"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_6sdp"
+                app:cardCornerRadius="@dimen/_6sdp"
+                app:cardElevation="0dp"
+                style="@style/DayAndDarkColorForCard"
+                app:layout_constraintDimensionRatio="1:0.6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+            <View
+                android:id="@+id/post_release_date"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                style="@style/DayAndDarkColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

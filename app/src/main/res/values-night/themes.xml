@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BreakingNews" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/backgroundColor</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorAccent">@color/red</item>
+
+        <!--Shared Transaction-->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/backgroundColor</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SearchBg" parent="Theme.BreakingNews">
+        <item name="android:background">@drawable/search_bg</item>
+    </style>
+
+    <style name="DayNightBottomBar" parent="Theme.BreakingNews">
+        <item name="backgroundColor">@color/backgroundColor</item>
+    </style>
+
+    <style name="DayNightBackground" parent="Theme.BreakingNews">
+        <item name="android:background">@color/backgroundColor</item>
+    </style>
+
+    <style name="ToolbarBackground" parent="Theme.BreakingNews">
+        <item name="android:background">@color/nightBaseColor</item>
+    </style>
+
+    <style name="ItemBg" parent="Theme.BreakingNews">
+        <item name="android:background">#222222</item>
+    </style>
+
+    <style name="PostDescriptionColor" parent="Theme.BreakingNews">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="DayAndDarkColor" parent="Theme.BreakingNews">
+        <item name="android:background">@color/dark_blue</item>
+    </style>
+
+    <style name="DayAndDarkColorForCard" parent="Theme.BreakingNews">
+        <item name="cardBackgroundColor">@color/dark_blue</item>
+    </style>
+
+</resources>

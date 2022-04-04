@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Breaking News</string>
+    <string name="home">Дома</string>
+    <string name="category">Категория</string>
+    <string name="follow">Подписаться</string>
+    <string name="saved">Сохранено</string>
+    <string name="country">ru</string>
+    <string name="search">Поиск</string>
+    <string name="no_news">Нет новостей</string>
+    <string name="no_following_sources">Нет следующих источников</string>
+    <string name="following">Подписки</string>
+</resources>

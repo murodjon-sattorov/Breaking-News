@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShapeAppearanceOverlay.App.CompanyImage" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.App.PostImage" parent="">
+        <item name="cornerSize">5%</item>
+    </style>
+    <style name="TextSize">
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Breaking News</string>
+    <string name="home">Rumah</string>
+    <string name="category">Kategori</string>
+    <string name="follow">Mengikuti</string>
+    <string name="saved">Diselamatkan</string>
+    <string name="country">id</string>
+    <string name="search">Mencari</string>
+    <string name="no_news">Tidak ada kabar</string>
+    <string name="no_following_sources">Tidak ada sumber berikut</string>
+    <string name="following">Mengikuti</string>
+</resources>

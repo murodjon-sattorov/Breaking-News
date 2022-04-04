@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.murodjon_sattorov.breaking_news.view.fragments.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down" />
+        <action
+            android:id="@+id/action_homeFragment_to_fullNewsInfoFragment"
+            app:destination="@id/fullNewsInfoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="uz.murodjon_sattorov.breaking_news.view.fragments.category.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/action_categoryFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/followFragment"
+        android:name="uz.murodjon_sattorov.breaking_news.view.fragments.follow.FollowFragment"
+        android:label="fragment_follow"
+        tools:layout="@layout/fragment_follow">
+        <action
+            android:id="@+id/action_followFragment_to_fullNewsInfoFragment"
+            app:destination="@id/fullNewsInfoFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="uz.murodjon_sattorov.breaking_news.view.fragments.saved.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved">
+        <action
+            android:id="@+id/action_savedFragment_to_fullNewsInfoFragment"
+            app:destination="@id/fullNewsInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="uz.murodjon_sattorov.breaking_news.view.fragments.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_fullNewsInfoFragment"
+            app:destination="@id/fullNewsInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="uz.murodjon_sattorov.breaking_news.view.fragments.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/fullNewsInfoFragment"
+        android:name="uz.murodjon_sattorov.breaking_news.view.fragments.fullinfo.FullNewsInfoFragment"
+        android:label="FullNewsInfoFragment"
+        tools:layout="@layout/fragment_full_news_info">
+        <argument
+            android:name="article"
+            app:argType="uz.murodjon_sattorov.breaking_news.core.models.post.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="uz.murodjon_sattorov.breaking_news.view.fragments.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_fullNewsInfoFragment"
+            app:destination="@id/fullNewsInfoFragment" />
+    </fragment>
+</navigation>

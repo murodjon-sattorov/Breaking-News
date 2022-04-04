@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Breaking News</string>
+    <string name="api_key" translatable="false">fd824ad2d79641b2be907124a2557add</string>
+    <string name="home">Home</string>
+    <string name="category">Category</string>
+    <string name="follow">Follow</string>
+    <string name="saved">Saved</string>
+    <string name="country">us</string>
+    <string name="search">Search</string>
+
+    <string name="business" translatable="false">business</string>
+    <string name="entertainment" translatable="false">entertainment</string>
+    <string name="general" translatable="false">general</string>
+    <string name="health" translatable="false">health</string>
+    <string name="science" translatable="false">science</string>
+    <string name="sports" translatable="false">sports</string>
+    <string name="technology" translatable="false">technology</string>
+    <string name="no_news">No news</string>
+    <string name="no_following_sources">No following sources</string>
+    <string name="following">Following</string>
+
+</resources>

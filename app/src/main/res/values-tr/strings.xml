@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Breaking News</string>
+    <string name="saved">Kaydedildi</string>
+    <string name="follow">Takip etmek</string>
+    <string name="category">Kategori</string>
+    <string name="home">Ev</string>
+    <string name="country">tr</string>
+    <string name="search">Arama</string>
+    <string name="no_news">Haber yok</string>
+    <string name="no_following_sources">Aşağıdaki kaynak yok</string>
+    <string name="following">Takip etme</string>
+</resources>
